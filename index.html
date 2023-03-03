@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Amesti</title>
+</head>
+
+<body id="inicio">
+    <header>
+        <div class="header" data-aos="fade-down" data-aos-once="true">
+            <div>
+                <a href="javascript: scrollAmesti();"><img src="./assets/amesti.logo.jpg" alt="logo"></a>
+            </div>
+
+            <nav class="nav">
+                <div class="enlaces__nav__container">
+                <li >
+                    <a href="javascript: scrollNosotros();" class="nav__a">Nosotros</a>
+                    <a href="javascript: scrollNuestrosProductos();" class="nav__a">Nuestros productos</a>
+                    <a href="javascript: scrollMasVendidos();" class="nav__a">Mas vendidos</a>
+                    <a href="javascript: scrollContacto();" class="nav__a">Contacto</a>
+                </li>
+            </div>
+
+            <div class="ham">
+                <span class="br-1"></span>
+                <span class="br-2"></span>
+                <span class="br-3"></span>
+            </div>
+
+            </nav>
+           
+        </div>
+    </header>
+    <div class="inicio" data-aos="zoom-out">
+        <div class="inicio__titulo">
+            <h1>Welcome <br /> to <br /> Amesti</h1>
+        </div>
+    </div>
+
+    <section id='target1' class="nuestrosproductos__container">
+        <div class="nuestrosproductos__container--texto" data-aos="fade-right">
+            <h2>Nosotros</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa optio dolorem officia neque. Consequuntur,
+                suscipit? Aperiam quia aliquid quos consequatur amet debitis totam dolor rem rerum quae, ipsum accusamus
+                sint!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae libero sequi labore dignissimos, ullam a
+                aliquam quisquam molestias? Fugit repellendus rem consequatur impedit suscipit eaque! Pariatur ab neque
+                iure sunt!</p>
+        </div>
+        <div class="nuestrosproductos__container--img" data-aos="fade-left">
+            <img src="./assets/galeria1.jpg" alt="carrousel">
+        </div>
+    </section >
+
+    <section id='target2' class="galeria__container">
+        <div class="galeria__container1" data-aos="fade-right"><img src="./assets/amesticasa1.jpg" alt="casa1"></div>
+        <div class="galeria__container2" data-aos="zoom-in"><img src="./assets/amesticasa2.jpg" alt="casa2"></div>
+        <div class="galeria__container3" data-aos="fade-left">
+            <div class="galeria__container3--1"><img src="./assets/amesticasa3.jpg" alt="casa3"></div>
+            <div class="galeria__container3--2"><img src="./assets/amesticasa4.jpg" alt="casa4"></div>
+        </div>
+    </section>
+
+    <section id='target3' class="masvendidos__container" >
+        <h2 data-aos="zoom-in">Mas Vendidos</h2>
+        <div class="masvendidos__container--productos">
+            <div class="masvendidos__container--productos1" data-aos="fade-right"><img src="./assets/corner650.jpg" alt="modelo1">
+                <h3>Corner 650</h3>
+            </div>
+            <div class="masvendidos__container--productos2" data-aos="fade-right"><img
+                    src="./assets/estufa-a-lena-amesti-classic-500-rojo-italiano.jpg" alt="modelo2">
+                <h3>Classic 500 Rojo Italiano</h3>
+            </div>
+            <div class="masvendidos__container--productos3" data-aos="fade-left"><img src="./assets/rondo-440.jpg" alt="modelo3">
+                <h3>Rondo 440</h3>
+            </div>
+            <div class="masvendidos__container--productos4" data-aos="fade-left"><img src="./assets/amesti-cubic380.jpg" alt="modelo4">
+                <h3>Cubic 380</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id='target4' class="formulario__container">
+        <h2>Contactate con nosotros</h2>
+        <form action="">
+            <div class="formulario__container1">
+                <div class="formulario__container--nombre">
+                    <label for="">Nombre y Apellido</label>
+                    <br />
+                    <input type="text" id="nombre y apellido" placeholder="">
+                </div>
+
+                <div class="formulario__container--email">
+                    <label for="">E-mail</label>
+                    <br />
+                    <input type="text" id="e-mail" placeholder="E-mail">
+                </div>
+            </div>
+
+            <div class="formulario__container--mensaje">
+                <label for="">Dejanos tu mensaje</label>
+                <br />
+                <input type="text" id="dejanos tu mensaje" placeholder="">
+            </div>
+        </form>
+        <div class="contacto__container">
+        <button class="contacto">Enviar</button>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer">
+            <img class="footer__img" src="./assets/amesti.logo.jpg" alt="logo">
+            <div class="footer__container">
+                <img class="footer__container--wpp" src="./assets/whatsapp-negro-3.jpg" alt="wpp">
+               <a href="https://www.instagram.com/amestiuy/" target="_blank"> <img class="footer__container--ig" src="./assets/logoinstagram.jpg" alt="instagram"></a>
+                <span>amestiuruguay@gmail.com</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500
+        });
+    </script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
